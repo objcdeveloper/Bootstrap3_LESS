@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="test">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="http://www.gocare.com/js/calendar/calendar-win2k-1.css" />
+<link rel="stylesheet" type="text/css" href="http://www.gocare.com/skin/frontend/gocare-v2/default/css/ahs/styleahs.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.gocare.com/skin/frontend/gocare-v2/default/css/group-policy.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.gocare.com/skin/frontend/gocare-v2/default/css/master-admin-group-policy.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.gocare.com/skin/frontend/gocare-v2/default/css/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.gocare.com/skin/frontend/gocare-v2/default/css/modifications.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.gocare.com/skin/frontend/gocare-v2/default/css/toolandpop.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.gocare.com/skin/frontend/gocare-v2/default/css/modules/base-responsive.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.gocare.com/skin/frontend/gocare-v2/default/css/homepage.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.gocare.com/skin/frontend/gocare-v2/default/css/jasny-bootstrap.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.gocare.com/skin/frontend/gocare-v2/default/css/navbar.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.gocare.com/skin/frontend/gocare-v2/default/css/font-awesome.min.css" media="all" />
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/selectric.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+<script type="text/javascript" src="http://www.gocare.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/js/varien/product.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/js/varien/configurable.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/js/calendar/calendar.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/js/calendar/calendar-setup.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/js/jquery/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/js/jquery/noconflict.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/skin/frontend/gocare-v2/default/js/script.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/skin/frontend/gocare-v2/default/js/toolandpop.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/skin/frontend/gocare-v2/default/js/jasny-bootstrap.min.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/skin/frontend/gocare-v2/default/js/transition.js"></script>
+<script type="text/javascript" src="http://www.gocare.com/skin/frontend/base/default/js/scp_product_extension.js"></script>
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.selectric.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript" src="http://widget.trustpilot.com/bootstrap/v5/tp.widget.sync.bootstrap.min.js" async></script>
+
+
+</head>
+<body>
+    <header class="hide-on-mobile">
+        <div class="row">
+            <div class="col-sm-3">
+                <span class="logo">
+                    <img src="images/logo.png">
+                </span>
+            </div>
+            <div class="col-sm-3 pull-right">
+                <span class="phone-number">
+                    <img src="images/icon-message.png">
+                    855<span>-</span>462<span>-</span>2731
+                </span>
+            </div>
+            <div class="col-sm-6">
+                <span class="slogan">Our service is your protection</span>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="head-info container">
+            <h1 class="title">Welcome</h1>
+            <h2 class="subtitle">St. Joseph Catholic School - IA</h2>
+            <p class="description">GoCare has partnered with your school to offer affordable electronic device insurance.<br> Keep reading to learn more about why we’re a great choice.</p>
+        </div>
+        <div class="head-banner hide-on-mobile">
+            <span>
+                <img src="images/icon-key.png">
+                Ready to purchase your plan?
+            </span>
+            <a href="#">Skip straight to the form.</a>
+            <span>Questions? Call 1-855-462-2731</span>
+        </div>
+        <div class="main-banner">
+            <div class="content">
+                <h1>Protection<span>Made <span>Simple</span></span></h1>
+                <p>Custom-designed protection plans for your educational devices. <br>Our plans start at less than <span>$29.99 per year.</span></p>
+                <div class="btn-group">
+                    <a href="#" class="btn-custom btn-orange hide-on-mobile">Learn About Us</a>
+                    <a href="#" class="btn-custom btn-yellow hide-on-mobile">Select a Protection Plan</a>
+                    <a href="#" class="btn-custom btn-orange show-on-mobile">Read our Frequently Asked Questions</a>
+                </div>
+                <a href="#" class="arrow-down hide-on-mobile"><img src="images/arrow-down.png"></a>
+            </div>
+        </div>
+        <div class="plan-banner show-on-mobile">
+            <div class="plan-description clearfix">
+                <h4>Ready to Pick a Plan?</h4>
+                <a href="#" class="btn-custom btn-orange">I'm Ready</a>
+            </div>
+        </div>
+        <div class="head-banner show-on-mobile">
+            <span>Questions? Call 1-855-462-2731</span>
+            <span>or chart online now</span>
+        </div>
+        <div class="plan-bar container">
+            <h1>Protection Matters</h1>
+            <p class="description">If your child has an accident or your device stops working, having a plan makes life easier</p>
+            <div class="table-block">
+                <div class="plan-cell">
+                    <div class="plan-block plan-border orange-border">
+                        <img src="images/icon-girl.png" class="plan-icon">
+                        <h3><span>Protected</span>Parent</h3>
+                        <div class="items">
+                            <span>We pick-up the device.</span>
+                            <span>We provide a temporay replacement.</span>
+                            <span>We repair your device locally.</span>
+                            <span>Your repaired device is delivered to you.</span>
+                        </div>
+                        <p class="description">Starting at only</p>
+                        <p class="price-tag left-align">$29<sup>99</sup></p>
+                    </div>
+                    <div class="plan-description clearfix hide-on-mobile">
+                        <h4>Ready to Pick a Plan?</h4>
+                        <a href="#" class="btn-custom btn-orange">Pick a Plan</a>
+                    </div>
+                </div>
+                <div class="plan-cell plan-border">
+                    <div class="plan-block">
+                        <img src="images/icon-boy.png" class="plan-icon">
+                        <h3><span>Unprotected</span>Parent</h3>
+                        <div class="items">
+                            <span>Drive to the repair shop.</span>
+                            <span>Wait in line or on a waiting list.</span>
+                            <span>Wait for the shop to provide a quote.</span>
+                            <span>Wait for the shop to repair the device.</span>
+                            <span>Drive back to the repair shop.</span>
+                            <span>Pay more than expected.</span>
+                            <span>Sigh and wish you had insurance.</span>
+                        </div>
+                        <p class="price-tag">$40 - $250</p>
+                        <p class="description">out-of-pocket</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="device-bar">
+            <div class="container">
+                <h1>Select Your Device & Coverage</h1>
+                <div class="row">
+                    <div class="col-sm-4 first-row hide-on-mobile">
+                        <div class="info-block">
+                            <h5>Info</h5>
+                            <p>Your school has provided us with a list of approved devices. If you don’t see your device listed, please call us at <a>1-855-462-2731</a></p>
+                        </div>
+                        <p class="ul-header">Coverage selected includes</p>
+                        <div class="items">
+                            <span>ADH (Accidental Damage)</span>
+                            <span>Mechanical Breakdown (Warranty)</span>
+                            <span>Lost</span>
+                            <span>Theft</span>
+                            <span>Burglary and Robbery</span>
+                            <span>Perils</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 second-row">
+                        <select class=" active">
+                            <option>Select Your Device</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                        <select class="">
+                            <option>Select Your Protection Plan</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                        <select class="">
+                            <option>Select Your Protection Plan</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                        <select class="">
+                            <option>Select Your Protection Plan</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                        <select class="">
+                            <option>Select Your Protection Plan</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
+                        </select>
+                        <p class="hide-on-mobile">We also cover your personal devices like smartphones, laptops and tablets. </p>
+                        <p class="hide-on-mobile">Just click here to get coverage for your personal devices.</p>
+                    </div>
+                    <div class="col-sm-4 third-row">
+                        <div class="border-line"></div>
+                        <div class="show-on-mobile">
+                            <span class="description">Only</span><span class="price-tag">$29<sup>99</sup></span>
+                        </div>
+                        <ul>
+                            <li>Your devices are covered for 1 year</li>
+                            <li>Covers loss, theft, and damage</li>
+                            <li>A $0 deductible to activate accident claim</li>
+                            <li>GoCare Customer Support</li>
+                        </ul>
+                        <a class="btn-custom btn-orange">Purchase This Plan</a>
+                        <div class="hide-on-mobile">
+                            <span class="description">Only</span><span class="price-tag">$29<sup>99</sup></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="img-holder">
+                            <img src="images/icon-budget.png">
+                        </div>
+                        <h4>Budget<span>Friendly</span></h4>
+                        <p>Our plans are priced to accomodate your protection needs.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="img-holder">
+                            <img src="images/icon-shield.png">
+                        </div>
+                        <h4>Full<span>Protection</span></h4>
+                        <p>From basic insurance to comprehensive coverage, we've got your back</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="img-holder">
+                            <img src="images/icon-form.png">
+                        </div>
+                        <h4><span>Quick</span>Setup</h4>
+                        <p>We make signing up easy, you'll be done in just a few minutes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-bar">
+            <div class="container">
+                <h1>Why Insure?</h1>
+                <p>A simple accident can lead to a big headache. Here are our most common claims.</p>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h4>Laptops</h4>
+                        <div class="content">
+                            <div class="img-holder">
+                                <img src="images/icon-laptop.png">
+                            </div>
+                            <div class="panel-group" id="accordion-desktop">
+                                <div class="panel">
+                                    <div id="collapse-desktop" class="panel-collapse collapse in bs-prototype-override ">
+                                        <div class="items">
+                                            <span>Shattered Outer casing</span>
+                                            <span class="bar"></span>
+                                            <span>Cracked & Scratched Screen</span>
+                                            <span class="bar"></span>
+                                            <span>Power-On Failure</span>
+                                            <span class="bar"></span>
+                                            <span>Liquid Damage</span>
+                                        </div>
+                                    </div>
+                                    <a data-toggle="collapse" data-parent="#accordion-desktop,#accordion-mobile,#accordion-tablet" href="#collapse-desktop">
+                                        <span>Tap to Expand</span>
+                                        <div></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>Tablets</h4>
+                        <div class="content">
+                            <div class="img-holder">
+                                <img src="images/icon-tablet.png">
+                            </div>
+                            <div class="panel-group" id="accordion-tablet">
+                                <div class="panel">
+                                    <div id="collapse-tablet" class="panel-collapse collapse">
+                                        <div class="items">
+                                            <span>Touch Sense Malfunction</span>
+                                            <span class="bar"></span>
+                                            <span>Broken Display Screen</span>
+                                            <span class="bar"></span>
+                                            <span>Battery Failure</span>
+                                            <span class="bar"></span>
+                                            <span>Outer Buttons Jammed</span>
+                                        </div>
+                                    </div>
+                                    <a data-toggle="collapse" class="collapsed" data-parent="#accordion-desktop,#accordion-mobile,#accordion-tablet" href="#collapse-tablet">
+                                        <span>Tap to Expand</span>
+                                        <div></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>Phones</h4>
+                        <div class="content">
+                            <div class="img-holder">
+                                <img src="images/icon-phone.png">
+                            </div>
+                            <div class="panel-group" id="accordion-mobile">
+                                <div class="panel">
+                                    <div id="collapse-mobile" class="panel-collapse collapse">
+                                        <div class="items">
+                                            <span>Shattered Touch Screen</span>
+                                            <span class="bar"></span>
+                                            <span>Charging Port Malfunction</span>
+                                            <span class="bar"></span>
+                                            <span>Battery Failure</span>
+                                            <span class="bar"></span>
+                                            <span>Broken Speakers & Mic</span>
+                                        </div>
+                                    </div>
+                                    <a data-toggle="collapse" class="collapsed" data-parent="#accordion-desktop,#accordion-mobile,#accordion-tablet" href="#collapse-mobile">
+                                        <span>Tap to Expand</span>
+                                        <div></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-bar">
+            <div class="container">
+                <h1>Testimonials</h1>
+                <!-- TrustBox widget -->
+                <div class="trustpilot-widget hide-on-mobile" data-locale="en-US" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="53f5284f000064000579d61b" data-style-height="130px" data-style-width="100%" data-theme="light" data-stars="4,5">
+                    <a href="https://www.trustpilot.com/review/www.gocare.com" target="_blank">Trustpilot</a>
+                </div>
+
+                <div class="trustpilot-widget show-on-mobile" data-locale="en-US" data-template-id="539ad0ffdec7e10e686debd7" data-businessunit-id="53f5284f000064000579d61b" data-style-height="350px" data-style-width="100%" data-theme="light" data-stars="4,5">
+                    <a href="https://www.trustpilot.com/review/www.gocare.com" target="_blank">Trustpilot</a>
+                </div>
+                <!-- End TrustBox widget -->
+
+                <!-- <div class="content">
+                    <img class="left-arrow arrows" src="images/arrow-right.png">
+                    <img class="right-arrow arrows" src="images/arrow-right.png">
+                    <div class="row">
+                        <div class="col-sm-4 logo-area">
+                            <img src="images/logo-trust.png">
+                            <h4>Excellent</h4>
+                            <div class="stars">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                            </div>
+                            <p>Based on <span>254 reviews.</span></p>
+                        </div>
+                        <div class="col-sm-4 test-block">
+                            <div class="img-holder">
+                                <img src="images/icon-boy-brown.png">
+                            </div>
+                            <div class="test-content">
+                                <h6>June 1</h6>
+                                <h5>Quick and easy peace of mind!</h5>
+                                <p>Excellent service easy setup!! Seamless, only took a few minutes and now I have the comfort of knowi...</p>
+                                <span>Eric Jones</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 test-block">
+                            <div class="img-holder">
+                                <img src="images/icon-girl.png">
+                            </div>
+                            <div class="test-content">
+                                <h6>December 19</h6>
+                                <h5>Very helpful!<h5>
+                                <p>This is our second insurance company we have partnered with and GoCare has exceeded my expectations...</p>
+                                <span>Jennifer Berkner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="head-banner big-size">
+            <span>
+                <img src="images/logo-bbb.png">
+                We Get Straight A's
+            </span>
+        </div>
+        <div class="faq-bar container">
+            <h1>Have Questions?</h1>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="panel-group" id="accordion1">
+                        <div class="panel">
+                            <a data-toggle="collapse" data-parent="#accordion1,#accordion2" href="#collapse1">What devices are covered by GoCare?<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                            <div id="collapse1" class="panel-collapse collapse bs-prototype-override in">
+                                <span>Answer</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim, tellus in mattis varius, quam lorem efficitur enim, et viverra mauris metus a turpis. Ut enim nulla, fringilla eget semper tempus, semper tincidunt mi. Aliquam scelerisque fringilla.</p>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <a data-toggle="collapse" data-parent="#accordion1,#accordion2" class="collapsed" href="#collapse2">Can I insure a used phone?<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <span>Answer</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim, tellus in mattis varius, quam lorem efficitur enim, et viverra mauris metus a turpis. Ut enim nulla, fringilla eget semper tempus, semper tincidunt mi. Aliquam scelerisque fringilla.</p>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <a data-toggle="collapse" data-parent="#accordion1,#accordion2" class="collapsed"  href="#collapse3">What if my device isn’t listed on the form?<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <span>Answer</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim, tellus in mattis varius, quam lorem efficitur enim, et viverra mauris metus a turpis. Ut enim nulla, fringilla eget semper tempus, semper tincidunt mi. Aliquam scelerisque fringilla.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel-group" id="accordion2">
+                        <div class="panel">
+                            <a data-toggle="collapse" data-parent="#accordion1,#accordion2" class="collapsed" href="#collapse11">How do I file a claim with GoCare?<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                            <div id="collapse11" class="panel-collapse collapse">
+                                <span>Answer</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim, tellus in mattis varius, quam lorem efficitur enim, et viverra mauris metus a turpis. Ut enim nulla, fringilla eget semper tempus, semper tincidunt mi. Aliquam scelerisque fringilla.</p>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <a data-toggle="collapse" data-parent="#accordion1,#accordion2" class="collapsed" href="#collapse21">Do you cover stolen or lost devices?<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                            <div id="collapse21" class="panel-collapse collapse">
+                                <span>Answer</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim, tellus in mattis varius, quam lorem efficitur enim, et viverra mauris metus a turpis. Ut enim nulla, fringilla eget semper tempus, semper tincidunt mi. Aliquam scelerisque fringilla.</p>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <a data-toggle="collapse" data-parent="#accordion1,#accordion2" class="collapsed"  href="#collapse31">Is water damaged covered by GoCare?<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                            <div id="collapse31" class="panel-collapse collapse">
+                                <span>Answer</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim, tellus in mattis varius, quam lorem efficitur enim, et viverra mauris metus a turpis. Ut enim nulla, fringilla eget semper tempus, semper tincidunt mi. Aliquam scelerisque fringilla.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Don’t See Your Question Here? <span>Call us at 1-855-462-2731</span></h3>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <img src="images/icon-key-big.png">
+            <span>A New Haven partnered insurance intiative, custom built offers for the New Haven Unified School District.</span>
+        </div>
+    </footer>
+</body>
